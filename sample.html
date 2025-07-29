@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Project Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit's Project Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Vlog</h1>
-  <p>This blog showcases my personal cybersecurity projects and learning journey!</p>
+  <header>
+    <h1>🔧 Rohit's Cybersecurity Blog</h1>
+    <p>Learning and experimenting through real-world examples</p>
+  </header>
 
-  <h2>🔒 Project 1: Port Scanning</h2>
-  <p>Used Nmap to detect open ports and analyze responses...</p>
+  <main>
+    <div class="project-card">
+      <h2>📡 Network Scanning</h2>
+      <p>Explored port scanning using Nmap. Learned how services expose ports and how to identify them securely.</p>
+      <button onclick="showMore('nmap')">Read More</button>
+      <p id="nmap" class="hidden">Used Nmap on test networks, checked TCP/UDP scans, and analyzed open services.</p>
+    </div>
 
-  <h2>🛡️ Project 2: Firewall Rules</h2>
-  <p>Configured iptables to block unwanted traffic...</p>
+    <div class="project-card">
+      <h2>🧱 Firewall Configuration</h2>
+      <p>Practiced blocking and allowing traffic using iptables in Linux. A key part of network defense.</p>
+      <button onclick="showMore('firewall')">Read More</button>
+      <p id="firewall" class="hidden">Set custom rules to block specific IPs and allow trusted sources.</p>
+    </div>
+  </main>
 
-  <footer>Made with ❤️ by Rohit</footer>
+  <footer>
+    <p>© 2025 Rohit | Built with 💻 and ☕</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
