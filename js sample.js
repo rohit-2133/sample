@@ -1,1 +1,4 @@
-console.log("Thanks for visiting my blog!");
+function showMore(id) {
+  const para = document.getElementById(id);
+  para.classList.toggle('hidden');
+}
